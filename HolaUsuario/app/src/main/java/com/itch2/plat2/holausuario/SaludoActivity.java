@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class SaludoActivity extends AppCompatActivity {
-    private TextView txtSaludo;
+    private TextView txt1;
     private TextView txt2;
     private TextView txt3;
 
@@ -15,16 +15,16 @@ public class SaludoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_saludo);
 
 
-        txtSaludo = (TextView)findViewById(R.id.txtSaludo);
+        txt1 = (TextView)findViewById(R.id.txt1);
         txt2 = (TextView)findViewById(R.id.txt2);
         txt3 = (TextView)findViewById(R.id.txt3);
 
         Bundle bundle = this.getIntent().getExtras();
 
 
-        txtSaludo.setText("Hola " + bundle.getString("NOMBRE"));
-        txtSaludo.setText("texto2 " + bundle.getString("Texto2"));
-        txtSaludo.setText("texto3 " + bundle.getString("Texto3"));
+        txt1.setText("" + bundle.getString("Texto1"));
+        txt2.setText("" + bundle.getString("Texto2"));
+        txt3.setText("" + bundle.getString("Texto3"));
 
 
     }

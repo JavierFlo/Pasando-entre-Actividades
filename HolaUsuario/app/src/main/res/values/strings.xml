@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Hola Usuario</string>
+    <string name="app_name">Pasando entre actividades</string>
     <string name="action_settings">Settings</string>
 </resources>

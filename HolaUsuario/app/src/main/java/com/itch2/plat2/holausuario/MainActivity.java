@@ -14,7 +14,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText txtNombre;
+    private EditText txt1;
     private EditText txt2;
     private EditText txt3;
     private Button btnAceptar;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        txtNombre = (EditText)findViewById(R.id.txtNombre);
+        txt1 = (EditText)findViewById(R.id.txt1);
         txt2 = (EditText)findViewById(R.id.txt2);
         txt3 = (EditText)findViewById(R.id.txt3);
         btnAceptar = (Button)findViewById(R.id.btnAceptar);
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Bundle b = new Bundle();
-                b.putString("NOMBRE", txtNombre.getText().toString());
+                b.putString("Texto1", txt1.getText().toString());
                 b.putString("Texto2", txt2.getText().toString());
                 b.putString("Texto3", txt3.getText().toString());
 

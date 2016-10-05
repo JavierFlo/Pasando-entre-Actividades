@@ -13,20 +13,23 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-    <EditText android:id="@+id/txtNombre"
+    <EditText android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:inputType="text"
+        android:hint="Escribe Mensaje 1" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt2" />
+        android:id="@+id/txt2"
+        android:hint="Escribe Mensaje 2" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt3" />
+        android:id="@+id/txt3"
+        android:hint="Escribe Mensaje 3" />
 
     <Button android:id="@+id/btnAceptar"
         android:layout_width="wrap_content"
