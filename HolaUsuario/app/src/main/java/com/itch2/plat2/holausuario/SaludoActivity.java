@@ -19,12 +19,13 @@ public class SaludoActivity extends AppCompatActivity {
         txt2 = (TextView)findViewById(R.id.txt2);
         txt3 = (TextView)findViewById(R.id.txt3);
 
+        //Recuperamos la información pasada en el intent
         Bundle bundle = this.getIntent().getExtras();
 
-
-        txt1.setText("" + bundle.getString("Texto1"));
-        txt2.setText("" + bundle.getString("Texto2"));
-        txt3.setText("" + bundle.getString("Texto3"));
+        //Construimos el mensaje a mostrar
+        txt1.setText(  bundle.getString("Texto1"));
+        txt2.setText( bundle.getString("Texto2"));
+        txt3.setText( bundle.getString("Texto3"));
 
 
     }

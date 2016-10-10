@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -48,14 +49,16 @@ public class MainActivity extends AppCompatActivity {
                         new Intent(MainActivity.this, SaludoActivity.class);
 
 
+                //Creamos la información a pasar entre actividades
                 Bundle b = new Bundle();
                 b.putString("Texto1", txt1.getText().toString());
                 b.putString("Texto2", txt2.getText().toString());
                 b.putString("Texto3", txt3.getText().toString());
-
+                //Añadimos la información al intent
                 intent.putExtras(b);
 
                 startActivity(intent);
+
             }
         });
     }

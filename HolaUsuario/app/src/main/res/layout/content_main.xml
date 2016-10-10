@@ -16,24 +16,28 @@
     <EditText android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Escribe Mensaje 1" />
+        android:inputType="textEmailAddress"
+        android:hint="Escribe un correo" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
         android:id="@+id/txt2"
-        android:hint="Escribe Mensaje 2" />
+        android:hint="Escribe  el asunto" />
 
     <EditText
+        android:inputType="textMultiLine"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
         android:id="@+id/txt3"
-        android:hint="Escribe Mensaje 3" />
+        android:hint="Escribe el contenido " />
 
     <Button android:id="@+id/btnAceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar"
+        android:text="Enviar"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>
